@@ -12,20 +12,29 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital@1&family=Cinzel&family=Diplomata+SC&family=Goldman&family=Inconsolata&family=Lobster&family=Orbitron&family=Oswald&family=Rubik+Moonrocks&family=Titan+One&display=swap" rel="stylesheet">
+    <title>Crystal Ball</title>
 </head>
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Get Your Fortune</h1>
     </header>
 
-    <main>
+    <section id="question-section" class="fade-in" >
+        <label>What would you like to know..?</label>
+        <textarea id="asked-question"></textarea>
+        <button class="ask-button" id="ask-button">???</button>
+    </section>
 
-    </main>
+    <section id="answer-section" class="hidden">
+        <p id="question-display">1</p>
+        <img src="./assets/crystal-ball.png">
+        <p id="answer-display">answer</p>
+    </section>
 
-    <footer>&copy;2022 Software Developer</footer>
+   
+    
 
     <script type="module" src="app.js"></script>
 </body>

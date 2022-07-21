@@ -7,29 +7,100 @@
 body {
     height: 100vh;
     font-family: 'Rubik', san-serif;
-    background: var(--background);
+    background-color: rgb(61, 9, 77);
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr 1fr 3fr;
 }
 
 header {
-    position: sticky;
-    top: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: var(--header-background);
+    font-family: 'Cinzel', serif;
+    background-color: cadetblue;
+    font-size: 30px;
+    text-shadow: 3px 5px 6px rgba(28,54,110,0.69);
 }
 
-main {
-    padding: 20px;
+section {
+    display: grid;
 }
 
-footer {
-    position: sticky;
-    bottom: 0;
-    padding: 7px 20px;
-    font-size: .8em;
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--footer-background);
+.hidden {
+    display: none;
 }
+
+#question-section {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.ask-button {
+    height: 35px;
+    width: 60px;
+    justify-self: center;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 25px;
+    align-self: center;
+    background-color: cadetblue;
+    text-shadow: 3px 5px 6px rgba(28,54,110,0.69);
+    box-shadow: 2px 4px 5px rgba(138, 156, 194, 0.69);
+    cursor: pointer;
+
+}
+
+.ask-button:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+textarea {
+    height:30px;
+    resize: vertical;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+}
+
+label {
+    font-family: 'Cinzel', serif;  
+    text-shadow: 3px 5px 6px rgba(169, 185, 219, 0.69);
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(224, 234, 247)
+}
+
+#answer-section {
+    grid-template-rows: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#answer-display {
+    color: rgb(245, 228, 228);
+}
+
+
+
+
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    justify-self: center;
+    align-self: center;
+    color:rgb(224, 234, 247)
+}
+
+img {
+    height: 350px;
+    justify-self: center;
+    align-self: center;
+}
+
+
