@@ -21,16 +21,19 @@
         <h1>Get Your Fortune</h1>
     </header>
 
-    <main class="question-section">
+    <section id="question-section" class="fade-in" >
         <label>What would you like to know..?</label>
-            <textarea></textarea>
-    </main>
+        <textarea id="asked-question"></textarea>
+        <button class="ask-button" id="ask-button">???</button>
+    </section>
 
-    <div class="answer-container">
-        <p>answer</p>
+    <section id="answer-section" class="hidden">
+        <p id="question-display">1</p>
         <img src="./assets/crystal-ball.png">
-    </div>
+        <p id="answer-display">answer</p>
+    </section>
 
+   
     
 
     <script type="module" src="app.js"></script>
